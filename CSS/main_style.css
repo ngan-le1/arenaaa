@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+	background: #F8ECDE;
+			 color: #050000;
+			 font-family:"Archivo", Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+			 font-size: 16px
+}
+h1,h2,h3,h4,h5,h6{ margin-top: 0; margin-bottom: 5px}
+h1.tentruong
+{
+	font-size: 5vw;
+	color: #DC730B
+}
+@media (min-width:1000px)
+{h1.tentruong
+	{
+		font-size: 3vw;	}
+}
+h1
+{	font-size: 45px;
+color: #FF8600;
+font-family: "Archivo"
+}
+h2
+{	font-size: 25px;
+color: #3E8440;
+font-family: "Archivo"
+}
+h3
+{
+	font-size: 35px;
+color: #FF8600;
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+h4
+{
+	font-size: 30px;
+color: #FF8600;
+font-family: "Archivo";
+text-align:center
+}
+h5
+{
+	font-size: 18px;
+color: #3E8440;
+font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+text-align:center
+}
+h6
+{
+	font-size: 25px;
+color: 	#3E8440;
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+h7
+{
+	font-size: 25px;
+color: 	#FF8600;
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+.container
+{width: 80%; margin: auto}
+*{
+	box-sizing: border-box} /*day vien va bo le vao trong cho he thong*/
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+}
+.row{ display: flex;
+flex-wrap: wrap}
+@media (min-width:600px)
+{
+	.col-md-1 {width: 8.33%}
+.col-md-2 {width: 16.66%}
+.col-md-3 {width: 25%}
+.col-md-4 {width: 33.33%}
+.col-md-5 {width: 41.66%}
+.col-md-6 {width: 50%}
+.col-md-7 {width: 58.33%}
+.col-md-8 {width: 66.66}
+.col-md-9 {width: 75%}
+.col-md-10 {width: 83.33%}
+.col-md-11 {width: 91.66%}
+.col-md-12 {width: 100%}
+	/*he thong luoi 12 cot cho medium cho 600-1000*/
+}
+
+@media (min-width:1000px)
+{
+.col-lg-1 {width: 8.33%}
+.col-lg-2 {width: 16.66%}
+.col-lg-3 {width: 25%}
+.col-lg-4 {width: 33.33%}
+.col-lg-5 {width: 41.66%}
+.col-lg-6 {width: 50%}
+.col-lg-7 {width: 58.33%}
+.col-lg-8 {width: 66.66}
+.col-lg-9 {width: 75%}
+.col-lg-10 {width: 83.33%}
+.col-lg-11 {width: 91.66%}
+.col-lg-12 {width: 100%}
+	/*he thong luoi 12 cot cho lon cho pc 1000 tro len*/
+}
+
+
+
+.align-items-end { align-items: flex-start} /*sat tren*/
+.align-items-center { align-items: center} /* o giua chieu doc*/
+.align-items-end { align-items: flex-end}
+/*sat chan*/
+.justify-start {justify-content: flex-start}
+
+.img-100{width: 100%; height: auto}
+/*style cho menu*/
+.btn-menu{ 
+	position: absolute; 
+	right: 0; top: 0; 
+	cursor: pointer; 
+	font-weight: bold; 
+	font-size: 20px; 
+	background: #C90003; 
+	border: none;
+z-index: 2} /*cho chi so layer lon de button 3 gach nam tren menu*/
+ul.menu
+{margin: 0; 
+padding: 0;
+list-style: none;/*bo cham dau dong*/
+display: none
+} 
+ul.menu li
+{ position: relative}
+ul.menu li a
+{text-decoration: none;
+	background-color: #3E8440;
+	color: #BADD7F;
+	display: block;
+	padding: 15px;
+	margin: 1px}
+@media (min-width:1000px)
+	/*thiet bi tu 1000px tro len thi style menu lai nhu ben tren*/
+{
+	.btn-menu{display: none}
+	ul.menu{
+		display: flex !important;
+		margin-top: 0
+	}
+}
+
+.text-center{ text-align: center}
+.text-left{ text-align:left}
+.text-right{ text-align: right}
+.text-justify{ text-align: justify}
+
+/*thu vien mau*/
+.bg-primary {background-color: blueviolet}
+.text-primary {color:#DC730B}
+.bg-dark-10{ background-color: #FFDFBC}
+.bg-dark-20{ background-color: rgba(78,0,89,1.00)}
+.bg-dark-30{ background-color: rgba(0,0,0,0.3)}
+.bg-dark-40{ background-color: rgba(0,0,0,0.4)}
+.text-light{ color: white}
+
+.form-input
+{
+	width:  800px;
+	border-radius: 50px;
+	border: 1px  double #3E8440;
+	padding: 20px;
+	background-color:#BADD7F;
+	margin-bottom: 20px;
+
+}
+/* Chỉnh kích thước cho từng class cụ thể */
+
+.small-input {
+    width: 150px;  /* Chiều rộng 150px */
+    height: 30px;  /* Chiều cao 30px */
+    padding: 20px; /* Khoảng đệm bên trong */
+    font-size: 14px; /* Kích thước chữ */
+    border: 1px  double #3E8440;; /* Viền */
+   border-radius: 50px; /* Bo góc nhẹ */
+	margin-bottom: 20px;
+}
+
+.medium-input {
+   width:  400px;
+	border-radius: 50px;
+	border: 1px  double #3E8440;
+	padding: 20px;
+	background-color:#BADD7F;
+	margin-bottom: 20px;}
+
+
+.large-input {
+    width: 350px;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #555;
+    border-radius: 6px;
+}
+
+/* Bạn cũng có thể nhắm mục tiêu theo type */
+input[type="email"].email-input { /* Nhắm mục tiêu input type="email" có class "email-input" */
+    width: 280px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #007bff; /* Ví dụ màu viền khác */
+    border-radius: 4px;
+}
+
+/* Hoặc nhắm mục tiêu theo type chung nếu muốn áp dụng cho tất cả input cùng loại */
+input[type="password"] {
+    width: 200px;
+    height: 35px;
+    padding: 7px 10px;
+    font-size: 16px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+}
+.btn-primary
+	{color: #3E8440;
+	padding: 5px 10px;
+	border:none;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	font: "Roboto";
+	text-decoration: none}
+
+.btn-primary:hover
+{background: #BADD7F}
+
+.btn-primary second
+{background: #F3B5F8;
+	color: #FFCBCC;
+	padding: 5px 10px;
+	border:none;
+	cursor: pointer}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  background: #C60C0F
+}
+.rounded-box {
+    border: 1px solid rgba(250,249,176,1.00) ; /* Viền của khung, bạn có thể thay đổi màu và độ dày */
+    border-radius: 10px; /* Độ bo góc, bạn có thể điều chỉnh giá trị này */
+    padding: 15px; /* Khoảng cách từ nội dung đến viền */
+    margin: 20px; /* Khoảng cách giữa các box */
+    background-color: #BADD7F; /* Màu nền của box */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */;
+	width:auto
+}
+.read-more-button
+{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: left;
+	cursor: pointer;
+	color: #3E8440;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 20px;
+	
+}
+ a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #F7EFDA;
+        }
